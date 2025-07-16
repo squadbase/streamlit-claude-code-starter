@@ -65,10 +65,27 @@ streamlit-claude-code-starter/
 
 ## Sample Data
 
-The starter includes realistic sample datasets:
+The `sample_data/` directory contains realistic e-commerce datasets for building your dashboard:
 
-- **Orders Data**: E-commerce transactions with order status, timestamps, and user information
-- **Users Data**: Customer profiles with demographics and geographic data
+### Core Datasets
+
+- **`orders.csv`** (37,957 records): E-commerce order transactions from 2025
+  - Fields: `order_id`, `user_id`, `status`, `gender`, `created_at`, `returned_at`, `shipped_at`, `delivered_at`, `num_of_item`
+  - Filtered to contain only 2025+ data for current analysis
+
+- **`users.csv`** (29,357 records): Customer profiles linked to the filtered orders
+  - Fields: `id`, `first_name`, `last_name`, `email`, `age`, `gender`, `state`, `street_address`, `postal_code`, `city`, `country`, `latitude`, `longitude`, `traffic_source`, `created_at`, `user_geom`
+  - Contains only users who have placed orders in the filtered dataset
+
+### Supporting Data Files (in `local/` directory)
+
+- **`order_items.csv`** (55,150 records): Individual items within each order
+  - Fields: `id`, `order_id`, `user_id`, `product_id`, `inventory_item_id`, `status`, `created_at`, `shipped_at`, `delivered_at`, `returned_at`, `sale_price`
+  
+- **`products.csv`** (24,640 records): Product catalog for items in the orders
+  - Fields: `id`, `cost`, `category`, `name`, `brand`, `retail_price`, `department`, `sku`, `distribution_center_id`
+
+All supporting datasets are filtered to only include data related to the current orders in `sample_data/`.
 
 ## Development with Claude Code
 
