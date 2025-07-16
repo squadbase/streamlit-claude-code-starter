@@ -29,3 +29,6 @@ Thumbs.db
 # Environment variables
 .env
 .env.local
+
+# local dir
+local
