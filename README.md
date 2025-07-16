@@ -87,6 +87,21 @@ The `sample_data/` directory contains realistic e-commerce datasets for building
 
 All supporting datasets are filtered to only include data related to the current orders in `sample_data/`.
 
+### Date Format Standardization
+
+All date columns in the CSV files follow a consistent format:
+- **Format**: `YYYY-MM-DD HH:MM:SS` (ISO 8601 standard)
+- **Example**: `2025-07-04 15:33:00`
+- **Timezone**: All dates are normalized to remove timezone information for consistency
+
+Date columns include:
+- `created_at`: When the record was created
+- `shipped_at`: When the order was shipped
+- `delivered_at`: When the order was delivered
+- `returned_at`: When the order was returned
+
+A standardization script (`local/standardize_dates.py`) is available to ensure date format consistency across all CSV files.
+
 ## Development with Claude Code
 
 This project is optimized for use with [Claude Code](https://claude.ai/code), an AI coding assistant:
