@@ -4,7 +4,6 @@ import pandas as pd
 st.set_page_config(page_title="Streamlit BI x Claude Code Starter", layout="wide")
 
 st.title("Streamlit BI x Claude Code Starter")
-
 @st.cache_data
 def load_data():
     orders_df = pd.read_csv("sample_data/orders.csv")
