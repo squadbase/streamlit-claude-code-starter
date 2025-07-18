@@ -164,4 +164,6 @@ MIT License - feel free to use this for learning and commercial projects.
 
 Start building your first BI dashboard today and see how AI-assisted development with Claude Code can accelerate your learning journey.
 
+**Deploy here!**
+
 [![Deploy to Squadbase](https://app.squadbase.dev/button.svg)](https://app.squadbase.dev/new/clone?repository-url=https://github.com/username/repo-name)
