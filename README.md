@@ -2,6 +2,10 @@
 
 A beginner-friendly starter template for building Business Intelligence (BI) dashboards using Streamlit and Python. Perfect for hands-on learning and rapid prototyping of data visualization applications.
 
+## One-click deployment
+
+[![Deploy to Squadbase](https://app.squadbase.dev/button.svg)](https://app.squadbase.dev/new/clone?repository-url=https://github.com/squadbase/streamlit-claude-code-starter)
+
 ## What You'll Learn
 
 - How to build interactive web dashboards with Streamlit
@@ -70,6 +74,7 @@ The `sample_data/` directory contains realistic e-commerce datasets for building
 ### Core Datasets
 
 - **`orders.csv`** (37,957 records): E-commerce order transactions from 2025
+
   - Fields: `order_id`, `user_id`, `status`, `gender`, `created_at`, `returned_at`, `shipped_at`, `delivered_at`, `num_of_item`
   - Filtered to contain only 2025+ data for current analysis
 
@@ -81,7 +86,6 @@ The `sample_data/` directory contains realistic e-commerce datasets for building
 
 - **`order_items.csv`** (55,150 records): Individual items within each order
   - Fields: `id`, `order_id`, `user_id`, `product_id`, `inventory_item_id`, `status`, `created_at`, `shipped_at`, `delivered_at`, `returned_at`, `sale_price`
-  
 - **`products.csv`** (24,640 records): Product catalog for items in the orders
   - Fields: `id`, `cost`, `category`, `name`, `brand`, `retail_price`, `department`, `sku`, `distribution_center_id`
 
@@ -90,11 +94,13 @@ All supporting datasets are filtered to only include data related to the current
 ### Date Format Standardization
 
 All date columns in the CSV files follow a consistent format:
+
 - **Format**: `YYYY-MM-DD HH:MM:SS` (ISO 8601 standard)
 - **Example**: `2025-07-04 15:33:00`
 - **Timezone**: All dates are normalized to remove timezone information for consistency
 
 Date columns include:
+
 - `created_at`: When the record was created
 - `shipped_at`: When the order was shipped
 - `delivered_at`: When the order was delivered
@@ -161,3 +167,7 @@ MIT License - feel free to use this for learning and commercial projects.
 **Happy Dashboard Building!**
 
 Start building your first BI dashboard today and see how AI-assisted development with Claude Code can accelerate your learning journey.
+
+**Deploy here!**
+
+[![Deploy to Squadbase](https://app.squadbase.dev/button.svg)](https://app.squadbase.dev/new/clone?repository-url=https://github.com/squadbase/streamlit-claude-code-starter)

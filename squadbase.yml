@@ -1,0 +1,8 @@
+# squadbase.yml
+version: "1"
+
+build:
+  framework: streamlit
+  runtime: python3.11 # Supported: python3.9, python3.10, python3.11, python3.12, python3.13
+  package_manager: uv # Supported: pip, poetry, uv
+  entrypoint: Home.py
